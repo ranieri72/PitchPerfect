@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PitchPerfect
 //
-//  Created by MTZ-5555-TRANSP on 08/01/19.
+//  Created by Ranieri Aguiar on 08/01/19.
 //  Copyright © 2019 Ranieri. All rights reserved.
 //
 

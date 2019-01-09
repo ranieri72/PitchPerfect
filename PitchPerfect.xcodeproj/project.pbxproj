@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		487F69EE21E57D7C00FEB46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F69ED21E57D7C00FEB46C /* AppDelegate.swift */; };
-		487F69F021E57D7C00FEB46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F69EF21E57D7C00FEB46C /* ViewController.swift */; };
+		487F69F021E57D7C00FEB46C /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F69EF21E57D7C00FEB46C /* RecordViewController.swift */; };
 		487F69F321E57D7C00FEB46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487F69F121E57D7C00FEB46C /* Main.storyboard */; };
 		487F69F521E57D7E00FEB46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487F69F421E57D7E00FEB46C /* Assets.xcassets */; };
 		487F69F821E57D7E00FEB46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487F69F621E57D7E00FEB46C /* LaunchScreen.storyboard */; };
+		487F6A0021E57F7800FEB46C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F69FF21E57F7800FEB46C /* PlayViewController.swift */; };
+		487F6A0221E5934900FEB46C /* PlayViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F6A0121E5934900FEB46C /* PlayViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		487F69EA21E57D7C00FEB46C /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487F69ED21E57D7C00FEB46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		487F69EF21E57D7C00FEB46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		487F69EF21E57D7C00FEB46C /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		487F69F221E57D7C00FEB46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487F69F421E57D7E00FEB46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487F69F721E57D7E00FEB46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487F69F921E57D7E00FEB46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487F69FF21E57F7800FEB46C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		487F6A0121E5934900FEB46C /* PlayViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				487F69ED21E57D7C00FEB46C /* AppDelegate.swift */,
-				487F69EF21E57D7C00FEB46C /* ViewController.swift */,
+				487F69EF21E57D7C00FEB46C /* RecordViewController.swift */,
 				487F69F121E57D7C00FEB46C /* Main.storyboard */,
 				487F69F421E57D7E00FEB46C /* Assets.xcassets */,
 				487F69F621E57D7E00FEB46C /* LaunchScreen.storyboard */,
 				487F69F921E57D7E00FEB46C /* Info.plist */,
+				487F69FF21E57F7800FEB46C /* PlayViewController.swift */,
+				487F6A0121E5934900FEB46C /* PlayViewControllerExtension.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487F69F021E57D7C00FEB46C /* ViewController.swift in Sources */,
+				487F69F021E57D7C00FEB46C /* RecordViewController.swift in Sources */,
+				487F6A0021E57F7800FEB46C /* PlayViewController.swift in Sources */,
+				487F6A0221E5934900FEB46C /* PlayViewControllerExtension.swift in Sources */,
 				487F69EE21E57D7C00FEB46C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
