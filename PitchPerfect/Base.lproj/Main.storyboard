@@ -51,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.90045934915542603" green="0.41317844390869141" blue="0.40739163756370544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.03636638448" green="0.23687756060000001" blue="0.36249732969999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="17U-F9-Q8H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B0U-r7-auh"/>
                             <constraint firstItem="17U-F9-Q8H" firstAttribute="top" secondItem="wZC-dD-h16" secondAttribute="bottom" constant="10" id="GTX-WV-4Cy"/>
@@ -156,7 +156,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.90045934915542603" green="0.41317844390869141" blue="0.40739163756370544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.03636638448" green="0.23687756060000001" blue="0.36249732969999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D9g-7R-lFJ" firstAttribute="top" secondItem="48w-tU-6W6" secondAttribute="top" id="FYg-KF-DEs"/>
                             <constraint firstItem="ZjE-A1-nj6" firstAttribute="centerX" secondItem="48w-tU-6W6" secondAttribute="centerX" id="GPS-il-VOU"/>

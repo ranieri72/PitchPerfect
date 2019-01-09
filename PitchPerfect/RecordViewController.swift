@@ -16,6 +16,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet var lbStatus: UILabel!
     
+    var session: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var isRecording = true
     let identifier = "stopRecording"
@@ -38,9 +39,11 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
         
-        let session = AVAudioSession.sharedInstance()
+        session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
+        try! session.setActive(true, options: .notifyOthersOnDeactivation)
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
