@@ -32,6 +32,14 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
+        
+        btnSlow.imageView?.contentMode = .scaleAspectFit
+        btnFast.imageView?.contentMode = .scaleAspectFit
+        btnLow.imageView?.contentMode = .scaleAspectFit
+        btnHigh.imageView?.contentMode = .scaleAspectFit
+        btnEcho.imageView?.contentMode = .scaleAspectFit
+        btnReverb.imageView?.contentMode = .scaleAspectFit
+        btnStop.imageView?.contentMode = .scaleAspectFit
     }
     
     override func viewWillAppear(_ animated: Bool) {

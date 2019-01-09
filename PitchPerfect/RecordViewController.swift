@@ -18,16 +18,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     var session: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
-    var isRecording = true
     let identifier = "stopRecording"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupView(isRecording: false)
     }
     
-    func setupView() {
-        isRecording = !isRecording
+    func setupView(isRecording: Bool) {
         btnRecord.isEnabled = !isRecording
         btnStop.isEnabled = isRecording
         lbStatus.text = isRecording ? "gravando..." : "toque para gravar"
@@ -50,7 +48,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        setupView()
+        setupView(isRecording: false)
         if flag {
             performSegue(withIdentifier: identifier, sender: audioRecorder.url)
         } else {
@@ -67,7 +65,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func btnRecordAction(_ sender: UIButton) {
-        setupView()
+        setupView(isRecording: true)
         recordAudio()
     }
     
